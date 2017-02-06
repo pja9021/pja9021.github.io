@@ -1,0 +1,53 @@
+div {
+	width: 300px;
+	height: 150px;
+	background: #302B27;
+}
+
+div .result{
+	color: white;
+	float: right;
+	vertical-align: bottom;
+}
+
+table {
+	width: 300px;
+	border-collapse: collapse;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+td {
+	width: 75px;
+	height: 75px;	
+	text-align: center;
+	font-weight: normal;
+	vertical-align: middle;
+}
+
+.btnCal{
+	background: #E6E5E4;
+}
+
+.btnCal:hover{
+	background: #BEBDBC;
+}
+
+.btnOper{
+	background: #FD912B;
+}
+
+.btnOper:hover{
+	background: #C15F03;
+}
+
+.btnNum {
+	background: #F3F2F1;
+}
+
+.btnNum:hover {
+	background: #BEBDBC;
+}
+

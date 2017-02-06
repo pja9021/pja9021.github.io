@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+		<script src="calculator.js"></script>
+		<link rel="stylesheet" type="text/css" href="calculator.css">
+		<meta charset=utf-8 />
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>JS Bin</title>
+	</head>
+	<body>
+		<div ng-controller="MainCtrl">
+			<div>
+				<span class="result" ng-show="isExist">{{result}}</span>
+				<span class="result" ng-show="!isExist">{{clickNum}}</span>
+			</div>
+			<table>
+				<tr>
+					<td class="btnCal" ng-click="reset()">{{name}}</td>
+					<td class="btnCal" ng-click="numChange('+/-')">+/-</td>
+					<td class="btnCal" ng-click="numChange('%')">%</td>
+					<td class="btnOper" ng-click="numOper('/')">/</td>
+				</tr>
+				<tr>
+					<td class="btnNum" ng-click="numClick('7')">7</td>
+					<td class="btnNum" ng-click="numClick('8')">8</td>
+					<td class="btnNum" ng-click="numClick('9')">9</td>
+					<td class="btnOper" ng-click="numOper('*')">*</td>
+				</tr>
+				<tr>
+					<td class="btnNum" ng-click="numClick('4')">4</td>
+					<td class="btnNum" ng-click="numClick('5')">5</td>
+					<td class="btnNum" ng-click="numClick('6')">6</td>
+					<td class="btnOper" ng-click="numOper('-')">-</td>
+				</tr>
+				<tr>
+					<td class="btnNum" ng-click="numClick('1')">1</td>
+					<td class="btnNum" ng-click="numClick('2')">2</td>
+					<td class="btnNum" ng-click="numClick('3')">3</td>
+					<td class="btnOper" ng-click="numOper('+')">+</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="btnNum" ng-click="numClick('0')">0</td>
+					<td class="btnNum" ng-click="numClick('.')">.</td>
+					<td class="btnOper" ng-click="showResult()">=</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
